@@ -1,4 +1,3 @@
-import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import SectionContainer from '@/components/SectionContainer'
@@ -50,13 +49,6 @@ export default function PostLayout({ frontMatter, authorDetails, children }) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-full xl:row-span-full xl:pb-0">
               <div className="prose max-w-xs pt-10 pb-8 dark:prose-dark md:max-w-none">
                 {children}
-              </div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
               </div>
             </div>
           </div>
