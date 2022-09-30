@@ -1,10 +1,10 @@
 ---
 name: Samad Ahmed
 avatar: /static/images/avatar.png
-occupation: Software Engineer and Indie Maker
+occupation: Software Engineer
 company: Chamoy Labs
 email: samad@chamoylabs.com
-twitter: https://twitter.com/Twitter
+twitter: https://twitter.com/_samadahmed
 linkedin: https://www.linkedin.com/in/samadahmed/
 github: https://github.com/sahmed007
 ---

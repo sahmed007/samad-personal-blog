@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Samad Ahmed Blog',
+  title: 'Samad Ahmed - Developer, Indie Hacker, Cockroach',
   author: 'Samad Ahmed',
   headerTitle: '@_samadahmed',
   description: 'A blog created with Next.js and Tailwind.css',
@@ -11,7 +11,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   email: 'samad@chamoylabs.com',
   github: 'https://github.com/sahmed007',
-  twitter: 'https://twitter.com',
+  twitter: 'https://twitter.com/_samadahmed',
   linkedin: 'https://www.linkedin.com/in/samadahmed/',
   locale: 'en-US',
   analytics: {
