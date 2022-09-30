@@ -26,7 +26,9 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const allPosts = await getAllFilesFrontMatter('blog')
   const filteredPosts = allPosts.filter(
-    (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(params.tag)
+    (post) =>
+      post.draft !== true &&
+      post.tags.map((t) => kebabCase(t)).includes(params.tag)
   )
 
   // rss
@@ -49,7 +51,10 @@ export default function Tag({ posts, tag }) {
         title={`${tag} - ${siteMetadata.author}`}
         description={`${tag} tags - ${siteMetadata.author}`}
       />
-      <ListLayout posts={posts} title={title} />
+      <ListLayout
+        posts={posts}
+        title={title}
+      />
     </>
   )
 }

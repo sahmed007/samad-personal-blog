@@ -2,7 +2,10 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
+  <div
+    className="md p-4 md:w-1/2"
+    style={{ maxWidth: '544px' }}
+  >
     <div
       className={`${
         imgSrc && 'h-full'
@@ -10,7 +13,10 @@ const Card = ({ title, description, imgSrc, href }) => (
     >
       {imgSrc &&
         (href ? (
-          <Link href={href} aria-label={`Link to ${title}`}>
+          <Link
+            href={href}
+            aria-label={`Link to ${title}`}
+          >
             <Image
               alt={title}
               src={imgSrc}
@@ -31,14 +37,19 @@ const Card = ({ title, description, imgSrc, href }) => (
       <div className="p-6">
         <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
           {href ? (
-            <Link href={href} aria-label={`Link to ${title}`}>
+            <Link
+              href={href}
+              aria-label={`Link to ${title}`}
+            >
               {title}
             </Link>
           ) : (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">
+          {description}
+        </p>
         {href && (
           <Link
             href={href}
