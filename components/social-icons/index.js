@@ -16,7 +16,7 @@ const components = {
   twitter: Twitter,
 }
 
-const SocialIcon = ({ kind, href, size = 8 }) => {
+const SocialIcon = ({ kind, href, size = 5 }) => {
   if (
     !href ||
     (kind === 'mail' &&

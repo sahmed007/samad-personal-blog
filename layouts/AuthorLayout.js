@@ -2,15 +2,15 @@ import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 
-export default function AuthorLayout({ children, frontMatter }) {
+export default function AuthorLayout({ frontMatter }) {
   const {
     name,
     avatar,
     occupation,
-    company,
     email,
-    twitter,
+    location,
     linkedin,
+    twitter,
     github,
   } = frontMatter
 
@@ -26,21 +26,21 @@ export default function AuthorLayout({ children, frontMatter }) {
             About
           </h1>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center pt-8">
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <div className="flex flex-col items-center p-2 text-center md:flex-row">
             <Image
               src={avatar}
               alt="avatar"
-              width="160px"
-              height="160px"
-              className="h-48 w-48 rounded-full"
+              width="150px"
+              height="150px"
+              className="rounded-md"
             />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+            <h3 className="p-6 text-2xl font-bold leading-8 tracking-tight">
               {name}
             </h3>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
-            <div className="flex space-x-3 pt-6">
+            <div className="text-gray-500 dark:text-gray-400">{location}</div>
+            <div className="flex space-x-3 p-4">
               <SocialIcon
                 kind="mail"
                 href={`mailto:${email}`}
@@ -60,7 +60,44 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
-            {children}
+            <p>
+              Tails Azimuth is a professor of atmospheric sciences at the
+              Stanford AI Lab. His research interests includes complexity
+              modelling of tailwinds, headwinds and crosswinds.
+            </p>
+            <p>
+              Tails Azimuth is a professor of atmospheric sciences at the
+              Stanford AI Lab.
+            </p>
+            <h2 id="timeline">Timeline</h2>
+            <h3 id="2022">2022</h3>
+            <ul>
+              <li>x</li>
+              <li>y</li>
+              <li>z</li>
+            </ul>
+            <h3 id="2021">2021</h3>
+            <ul>
+              <li>x</li>
+              <li>y</li>
+              <li>z</li>
+            </ul>
+            <h3 id="2021">2020</h3>
+            <ul>
+              <li>x</li>
+              <li>y</li>
+              <li>z</li>
+            </ul>
+            <h3 id="2021">2019</h3>
+            <ul>
+              <li>x</li>
+              <li>y</li>
+              <li>z</li>
+            </ul>
+            <h3 id="1996">1996</h3>
+            <ul>
+              <li>x</li>
+            </ul>
           </div>
         </div>
       </div>
