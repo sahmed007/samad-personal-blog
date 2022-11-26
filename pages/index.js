@@ -34,7 +34,7 @@ export default function Home({ posts }) {
               </span>
             </h2>
             <p className="mb-16 text-gray-500 dark:text-gray-400">
-              Open-source developer and indie hacker building next-generation
+              Software engineer and indie hacker building next-generation
               developer tools and products.
             </p>
           </div>
