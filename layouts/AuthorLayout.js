@@ -35,7 +35,7 @@ export default function AuthorLayout({ frontMatter }) {
               height="150px"
               className="rounded-md"
             />
-            <h3 className="p-6 text-2xl font-bold leading-8 tracking-tight">
+            <h3 className="pt-6 text-2xl font-bold leading-8 tracking-tight md:p-0">
               {name}
             </h3>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>

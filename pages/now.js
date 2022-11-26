@@ -1,35 +1,52 @@
-import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-  return { props: { posts } }
-}
-
 export default function Now() {
   return (
     <>
-      <PageSEO
-        title={siteMetadata.title}
-        description={siteMetadata.description}
-      />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="flex flex-col-reverse items-start sm:flex-row">
-          <div className="flex flex-col space-y-2 pt-6 pb-8 pr-8 md:space-y-5">
-            <h1 className="text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-              Samad Ahmed
-            </h1>
-            <h2 className="mb-4 text-black dark:text-white">
-              Software Engineer at{' '}
-              <span className="font-semibold">
-                Solaris Oilfield Infrastructure
-              </span>
-            </h2>
-            <p className="mb-16 text-gray-500 dark:text-gray-400">
-              Software engineer and indie hacker building next-generation
-              developer tools and products.
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Now
+          </h1>
+        </div>
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <div className="prose max-w-none pb-8 dark:prose-dark xl:col-span-2">
+            <p>This is a now page inspired by Derek Sivers.</p>
+            <p>
+              Updated on <span className="font-bold">Nov 28, 2022</span>
+            </p>
+            <h2 id="building">Buiding</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
+              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
+              eu ultricies massa viverra non.
+            </p>
+            <h2 id="working">Working</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
+              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
+              eu ultricies massa viverra non.
+            </p>
+            <h2 id="playing">Playing</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
+              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
+              eu ultricies massa viverra non.
+            </p>
+            <h2 id="gaming">Gaming</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
+              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
+              eu ultricies massa viverra non.
+            </p>
+            <h2 id="traveling">Traveling</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
+              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
+              eu ultricies massa viverra non.
             </p>
           </div>
         </div>
