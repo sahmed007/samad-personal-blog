@@ -8,7 +8,7 @@ export default function Now() {
           </h1>
         </div>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <div className="prose max-w-none pb-8 dark:prose-dark xl:col-span-2">
+          <div className="prose max-w-none pb-8 text-sm dark:prose-dark xl:col-span-2">
             <p>
               This is a now page inspired by{' '}
               <span className="font-bold">Derek Sivers</span>.
