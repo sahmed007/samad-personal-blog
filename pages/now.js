@@ -9,44 +9,42 @@ export default function Now() {
         </div>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <div className="prose max-w-none pb-8 dark:prose-dark xl:col-span-2">
-            <p>This is a now page inspired by Derek Sivers.</p>
+            <p>
+              This is a now page inspired by{' '}
+              <span className="font-bold">Derek Sivers</span>.
+            </p>
             <p>
               Updated on <span className="font-bold">Nov 28, 2022</span>
             </p>
             <h2 id="building">Buiding</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
-              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
-              eu ultricies massa viverra non.
+              Right now I'm building on a SaaS product focused on making
+              ordinary spaces into spaces that users can interact with.
+              Currently in stealth mode.
             </p>
             <h2 id="working">Working</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
-              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
-              eu ultricies massa viverra non.
+              By day, I'm working as a software engineer at Solaris Oilfield
+              Infrastructure. Specifically, working on setting up infrastructure
+              and implementation for a data lakehouse system.
             </p>
             <h2 id="playing">Playing</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
-              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
-              eu ultricies massa viverra non.
+              Music is the best stress relief. I've been learning Julia Florida
+              by Augustin Barrios Mangore on the classical side and
+              experimenting with neo-soul riffs.
             </p>
             <h2 id="gaming">Gaming</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
-              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
-              eu ultricies massa viverra non.
+              I've beaten alot of games since I nabbed a PS5. Recently finished
+              Ghost of Tsushima and The Last of Us. Now delivering packages in
+              Death Stranding.
             </p>
             <h2 id="traveling">Traveling</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              mattis erat vel sagittis pulvinar. Morbi pulvinar neque eu lectus
-              convallis, vitae finibus neque dictum. Fusce vulputate lorem odio,
-              eu ultricies massa viverra non.
+              Planned my next trip and I'm going hiking in Patagonia. Going to
+              spend a couple of weeks across El Chaltén, El Calafate, and Buenos
+              Aires.
             </p>
           </div>
         </div>
