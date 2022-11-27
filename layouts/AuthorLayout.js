@@ -31,8 +31,8 @@ export default function AuthorLayout({ frontMatter }) {
             <Image
               src={avatar}
               alt="avatar"
-              width="150px"
-              height="150px"
+              width="140px"
+              height="160px"
               className="rounded-md"
             />
             <h3 className="pt-6 text-2xl font-bold leading-8 tracking-tight md:p-0">

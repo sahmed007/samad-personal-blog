@@ -38,15 +38,15 @@ export default function Home({ posts }) {
               developer tools and products.
             </p>
           </div>
-          <div className="relative mb-2 mr-auto w-[80px] sm:mb-0 sm:w-[176px]">
+          <div className="relative mb-2 mr-auto w-[120px] sm:mb-0 sm:w-[200px]">
             <Image
               alt="Samad Ahmed"
-              height={176}
-              width={176}
+              width="140px"
+              height="160px"
               src="/static/images/avatar.png"
               sizes="30vw"
               priority
-              className="rounded-full grayscale filter"
+              className="rounded-md"
             />
           </div>
         </div>
