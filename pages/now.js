@@ -18,9 +18,9 @@ export default function Now() {
             </p>
             <h2 id="building">Buiding</h2>
             <p>
-              Right now I'm building on a SaaS product focused on making
-              ordinary spaces into spaces that users can interact with.
-              Currently in stealth mode.
+              Right now I'm building a SaaS product focused on making ordinary
+              spaces into spaces that users can interact with. Currently in
+              stealth mode.
             </p>
             <h2 id="working">Working</h2>
             <p>
