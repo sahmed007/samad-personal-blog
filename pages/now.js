@@ -16,7 +16,7 @@ export default function Now() {
             <p>
               Updated on <span className="font-bold">Nov 28, 2022</span>
             </p>
-            <h2 id="building">Buiding</h2>
+            <h2 id="building">Building</h2>
             <p>
               Right now I'm building a SaaS product focused on making ordinary
               spaces into spaces that users can interact with. Currently in
