@@ -1,0 +1,122 @@
+---
+title: 'AWS re:Invent 2022 Recap'
+date: '2022-12-05'
+lastmod: '2022-12-05'
+tags: ['aws', 'cloud', 'networking']
+draft: false
+summary: 'Strengthened my skills by learning about emerging technologies and new ways of doing things at AWS re:Invent 2022.'
+images:
+  [
+    '/static/images/aws/ai-generated-pic.jpg',
+    '/static/images/aws/s3-bucket-and-samad.jpg',
+  ]
+authors: ['default']
+---
+
+This was my second year at re:Invent. Aside from the long wait to grab a Lyft from the airport, the event (and food) was awesome.
+
+<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2 center">
+  <div className="my-1 px-2 overflow-hidden">
+    <img
+      src="/static/images/aws/s3-bucket-and-samad.jpg"
+      alt="Samad with an S3 bucket"
+    />
+  </div>
+</div>
+
+I went in with a schedule planned around machine learning technologies but after day one, my feet were hurting so bad that I ended up changing
+my schedule to stick around within the Venetian (my homebase) and choose talks, workshops, and sessions centered around tooling and optimization.
+I don't regret it at all because I learned so much, especially from talking to architects and other developers.
+
+<div className="flex flex-wrap -mx-2 overflow-hidden xl:-mx-2 items-center">
+  <div className="my-1 px-2 w-full h-1/3 overflow-hidden xl:my-1 xl:px-2 xl:w-1/3">
+    <img
+      src="/static/images/aws/food-one.jpg"
+      alt="Italian food"
+    />
+  </div>
+  <div className="my-1 px-2 h-1/3 overflow-hidden xl:my-1 xl:px-2 xl:w-1/3">
+    <img
+      src="/static/images/aws/food-two.jpg"
+      alt="Mediterranean food"
+    />
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2 xl:w-1/3">
+    <img
+      src="/static/images/aws/food-three.jpg"
+      alt="Mexican food"
+    />
+  </div>
+  <div className="my-1 px-2 w-full overflow-hidden xl:my-1 xl:px-2">
+    <img
+      src="/static/images/aws/team-pic.jpg"
+      alt="Samad with an S3 bucket"
+    />
+  </div>
+</div>
+
+## Takeaways
+
+Here are some of my opinions on the things I saw and learned in a week's span.
+
+### Amazon CodeCatalyst
+
+This seems cool in the sense that it really ties in all areas of the AWS Code\* suite. Personally, I felt that
+CodeCommit, CodeBuild, and CodePipeline all felt really distinct as services and most devs that I have talked to
+(including myself) don't really like these services when it comes to comparing the alternatives. However, this
+unified approach of essentially combining all the services into a single service can possibly be a revival.
+
+For onboarding new devs, it seems great if used in a large team. I mean, everything is practically in a single place
+so it's quite easy to deal with issue tracking, the code base, and pipelines. It also seems useful to use if you're
+a solo developer since you don't really need to use a bunch of tools.
+
+The plugins are great (but minimal). Clearly, AWS will add more in the future but for now it is lacking. There is also
+no public repos as far as I can tell and and no LFS either. It isn't really a dealbreaker, but it's something to consider.
+
+The best thing about this tool is the blueprints to get started quickly and the workflows. It is intuitive and all of them
+are parameterized so creating the `devfile` and switching between environments is easy.
+
+That being said, when the architect showed me this demo, my immediate thought was that this was an attack towards
+GitLab and GitHub. I think for AWS, it will be hard to convince users to switch over to CodeCatalyst. However, it can be
+a total gamechanger if AWS provides CodeWhisperer to run within pipelines. The architect I was speaking to said that this
+was on the roadmap, so it will be interesting to see the landscape of software project management shift.
+
+### Developer Ergonomics
+
+Most of my career (up to this point) has been involved in either working in monolithic codebases or microservices. I've done
+some work in serverless architecturally, but not a whole lot aside from serverless "side-car" operations such as snapping
+lambda functions to process events, call other services, batching, etc.
+
+I've experimented with serverless frameworks and IaC before, but not so much with the "AWS-way" of doing things using CDK and
+SAM CLI. So I decided to attend a workshop where I created a serverless API and developed/debugged it locally using the CLI tools.
+
+I loved working with the tools so much. It's quite easy to use and in my current job, I can actually see myself incorporating
+it as a part of my development flow. Most of my work nowadays is building data pipelines that usually have a lambda function
+operating behind the scenes.
+
+### Startup Loft
+
+As an indie dev, I spent a lot of time networking in the startup loft. It was eye-opening hearing the perspectives and lessons
+learned by founders, VCs, and CXOs. It was particularly enjoyable since these sessions offered more room for Q&A and a more
+interactive experience.
+
+I attended talks centered around reducing cloud startup costs, preventing neglectful security practices as you grow through
+stages, stories from women founders, and tips on fundraising from VCs.
+
+### Open Source
+
+In general, AWS has always been seen behind when it comes to open source when you compare the work they have done versus
+Microsoft and Google. But, it really seems that AWS has strengthened the initiative. Specifically, the effort placed on Amplify
+and Amplify Studio.
+
+I think as an indie-dev or a small team, this works great. I like that the libraries and components are open source and that the
+hosting/infrastructure side is totally seperate. This is great, because it makes it more extensible and you can bring your own
+infrastructure components and existing resources.
+
+I also visited the Open Source Zone and saw various demos. The one that stood out the most was AWS Copilot, which is a CLI tool for
+launching containers on Fargate and ECS. It has a similar to feel to SAM CLI which I liked (so the usage is easily inferred without
+much context switching between them).
+
+You can build via a manifest file for certain configurations. But, instead of using individual services, the necessary infrastructure
+can be generated based on the common architecture pattern needed for the task (whether it be a scheduled job, worker, backend service, etc).
+This reduces developer fatigue and gives you the best practices by default. It's built with Go.

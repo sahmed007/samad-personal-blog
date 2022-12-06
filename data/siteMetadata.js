@@ -2,11 +2,9 @@ const siteMetadata = {
   title: 'Samad Ahmed - Developer, Indie Hacker, Cockroach',
   author: 'Samad Ahmed',
   headerTitle: '@_samadahmed',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: "Samad Ahmed's Personal Blog",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'samad@chamoylabs.com',
